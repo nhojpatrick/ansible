@@ -1,0 +1,8 @@
+{
+  "name": "string",
+  "description": "string",
+  "mode": "BLOCK",
+  "matchers": [
+    "string"
+  ]
+}

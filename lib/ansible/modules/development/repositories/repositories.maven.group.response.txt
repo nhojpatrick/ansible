@@ -1,0 +1,8 @@
+201	
+Repository created
+
+401	
+Authentication required
+
+403	
+Insufficient permissions

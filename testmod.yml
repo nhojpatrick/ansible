@@ -1,0 +1,22 @@
+- name: test my new module
+  hosts: localhost
+  tasks:
+  - name: Create new Blob Store
+    nexus_blob_store:
+      store_name: 'alpha'
+      store_type: 'File'
+      host: 'http://192.168.0.50:8081'
+      nexus_username: 'admin'
+      nexus_password: 'L0cked4$'
+    register: testout
+  #- name: Delete new Blob Store
+  #  nexus_blob_store:
+  #    store_name: 'alpha'
+  #    host: 'http://192.168.0.50:8081'
+  #    nexus_username: 'admin'
+  #    nexus_password: 'L0cked4$'
+  #    exists: False
+  #  register: testout
+  - name: dump test output
+    debug:
+      msg: '{{ testout }}'
